@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Experience a game-changing product designed to empower your every step.">
+  <title>Next-Level Marketing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@1.0.0/dist/flowbite.min.js"></script>
+
+  <style>
+    /* Parallax Scrolling Effect */
+    .parallax {
+      background-image: url('https://images.unsplash.com/photo-1562577309-bc0709da63ea'); /* Add a relevant background image URL */
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+    }
+
+    html, body {
+  overflow: scroll; /* Enables scrolling */
+  scrollbar-width: none;  /* For Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none;  /* For Chrome, Safari, and Edge */
+}
+
+
+    /* Custom Smooth Scroll for the page */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Animate Elements when they come into view */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    /* Add subtle 3D hover effect to the cards */
+    .card-hover:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styling for the CTA button */
+    .cta-btn:hover {
+      transform: scale(1.1);
+      background-color: #F8D62E; /* Slightly brighter yellow */
+    }
+
+    /* Gradient Overlay for text sections */
+    .gradient-overlay {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    
+  </style>
+</head>
+
+<body class="bg-gray-900 font-sans text-white">
+    <!-- Hero Section with Parallax -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+
+    <!-- Hero Section with Parallax and Particles.js -->
+    <header class="relative w-full h-screen flex flex-col justify-center items-center text-center px-6 py-24 gradient-overlay">
+      <!-- Particles container -->
+      <div id="particles-js" class="absolute top-0 left-0 w-full h-full z-0"></div>
+  
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight z-10">DIGITAL MARKETING</h1>
+      <p class="text-lg md:text-2xl mb-6 max-w-2xl mx-auto z-10">Empower your journey with a product that changes everything. Seamlessly integrate, elevate your work, and achieve more.</p>
+      <button onclick="scrollToSection('features')" class="cta-btn bg-yellow-500 text-black py-3 px-8 rounded-lg text-xl shadow-lg transition duration-300 z-10">
+        Explore Now
+      </button>
+    </header>
+
+
+    <!-- entry -->
+    <section id="who-we-are" class="py-16 bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white relative overflow-hidden">
+      <!-- Parallax background effect -->
+      <div class="absolute top-0 left-0 w-full h-full bg-fixed bg-center bg-cover opacity-50" style="background-image: url('https://source.unsplash.com/1600x900/?tech,workplace'); z-index: -1;"></div>
+      
+      <div class="container mx-auto px-6 text-center relative">
+        <!-- Title with Animation -->
+        <h2 class="text-5xl font-bold text-yellow-400 mb-8 animate__animated animate__fadeInUp">Who We Are</h2>
+    
+        <!-- Description -->
+        <p class="text-xl mb-12 text-gray-300 max-w-3xl mx-auto fade-in animate__animated animate__fadeIn animate__delay-1s">
+          We are a passionate team of innovators, problem-solvers, and visionaries committed to providing the best solutions for individuals and businesses. Our goal is to create a world where technology works for you, simplifying your daily tasks and empowering you to achieve more.
+        </p>
+        
+        <!-- Mission and Vision Cards in Grid Layout -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
+    
+          <!-- Mission Card -->
+          <div class="bg-gray-700 p-8 rounded-xl shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-3xl">
+            <div class="mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-yellow-400 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-yellow-400 mb-4">Our Mission</h3>
+            <p class="text-gray-200 text-lg">
+              Our mission is to bridge the gap between cutting-edge technology and the everyday user. We strive to provide tools that are not only powerful but also intuitive and easy to use, enabling our customers to excel in every aspect of their lives.
+            </p>
+          </div>
+          
+          <!-- Vision Card -->
+          <div class="bg-gray-700 p-8 rounded-xl shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-3xl">
+            <div class="mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-yellow-400 mx-auto" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M12 2a4 4 0 10-4 4 4 4 0 004-4zm1 7H7v6h6v-6z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-yellow-400 mb-4">Our Vision</h3>
+            <p class="text-gray-200 text-lg">
+              We envision a world where technology simplifies every facet of life, empowering individuals and businesses to unlock their full potential. Through constant innovation and user-centric solutions, we aspire to be the leading tech partner of choice.
+            </p>
+          </div>
+    
+        </div>
+    
+        <!-- Values with Icons -->
+        <div class="text-center">
+          <h3 class="text-3xl font-semibold text-yellow-400 mb-8">Our Core Values</h3>
+          <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-12 px-8">
+            <!-- Value 1 -->
+            <div class="value-card p-8 bg-gray-700 rounded-xl shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
+              <div class="flex justify-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+                </svg>
+              </div>
+              <h4 class="text-xl font-semibold text-yellow-400 mb-4">Innovation</h4>
+              <p class="text-gray-200 text-lg">We push the boundaries of what's possible, always staying ahead of the curve.</p>
+            </div>
+    
+            <!-- Value 2 -->
+            <div class="value-card p-8 bg-gray-700 rounded-xl shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
+              <div class="flex justify-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+                </svg>
+              </div>
+              <h4 class="text-xl font-semibold text-yellow-400 mb-4">Integrity</h4>
+              <p class="text-gray-200 text-lg">We always do the right thing, even when no one is looking.</p>
+            </div>
+    
+            <!-- Value 3 -->
+            <div class="value-card p-8 bg-gray-700 rounded-xl shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
+              <div class="flex justify-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+                </svg>
+              </div>
+              <h4 class="text-xl font-semibold text-yellow-400 mb-4">Customer-Centric</h4>
+              <p class="text-gray-200 text-lg">We put our customers at the heart of everything we do, always striving for excellence.</p>
+            </div>
+    
+          </div>
+        </div>
+    
+        <!-- Call to Action Button -->
+        <div class="mt-12">
+          <a href="#contact" class="inline-block bg-yellow-400 text-gray-900 px-6 py-3 rounded-full text-lg font-semibold transform hover:scale-105 transition-all duration-300">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+    
+<!-- entry -->
+    
+    <section id="features" class="py-16 bg-gray-800">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-yellow-400 mb-12 fade-in">Why Our Product is a Game-Changer</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <!-- Feature Card 1 -->
+          <div class="card-hover bg-gray-700 p-8 rounded-xl shadow-lg transition-all duration-500 flex flex-col hover:scale-105 transform hover:shadow-2xl">
+            <h3 class="text-2xl font-semibold text-yellow-400 mb-4">Innovation at its Core</h3>
+            <p class="text-gray-200 text-lg flex-grow">Our product integrates the latest in cutting-edge technology, making it the ultimate tool for future-focused individuals.</p>
+            <a href="#learn-more" class="inline-block mt-6 bg-yellow-400 text-gray-900 px-6 py-3 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:bg-yellow-500">Learn More</a>
+          </div>
+          <!-- Feature Card 2 -->
+          <div class="card-hover bg-gray-700 p-8 rounded-xl shadow-lg transition-all duration-500 flex flex-col hover:scale-105 transform hover:shadow-2xl">
+            <h3 class="text-2xl font-semibold text-yellow-400 mb-4">Plug-and-Play Simplicity</h3>
+            <p class="text-gray-200 text-lg flex-grow">No complicated setup. Simply use, experience, and excel with minimal effort, maximum results.</p>
+            <a href="#learn-more" class="inline-block mt-6 bg-yellow-400 text-gray-900 px-6 py-3 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:bg-yellow-500">Learn More</a>
+          </div>
+          <!-- Feature Card 3 -->
+          <div class="card-hover bg-gray-700 p-8 rounded-xl shadow-lg transition-all duration-500 flex flex-col hover:scale-105 transform hover:shadow-2xl">
+            <h3 class="text-2xl font-semibold text-yellow-400 mb-4">Affordable Luxury</h3>
+            <p class="text-gray-200 text-lg flex-grow">Unbeatable pricing without sacrificing quality. Exceptional value for every user, no matter the budget.</p>
+            <a href="#learn-more" class="inline-block mt-6 bg-yellow-400 text-gray-900 px-6 py-3 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:bg-yellow-500">Learn More</a>
+          </div>
+          <!-- Feature Card 4 -->
+          <div class="card-hover bg-gray-700 p-8 rounded-xl shadow-lg transition-all duration-500 flex flex-col hover:scale-105 transform hover:shadow-2xl">
+            <h3 class="text-2xl font-semibold text-yellow-400 mb-4">Seamless Integration</h3>
+            <p class="text-gray-200 text-lg flex-grow">Our product works seamlessly across all platforms and devices, ensuring smooth and uninterrupted usage, wherever you are.</p>
+            <a href="#learn-more" class="inline-block mt-6 bg-yellow-400 text-gray-900 px-6 py-3 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:bg-yellow-500">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+  
+    
+
+        <!-- Carousel Section -->
+        <div id="default-carousel" class="relative w-full bg-gray-900" data-carousel="slide">
+          <div class="relative overflow-hidden rounded-lg" style="height: 800px;"> 
+
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="/1.jpg"   class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+          </div>
+          <!-- Slider indicators -->
+          <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+          </div>
+          <!-- Slider controls -->
+          <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4-4 4"/>
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+
+        <section class="py-16 bg-gradient-to-r from-gray-800 via-gray-900 to-black relative overflow-hidden">
+          <!-- Parallax background effect -->
+          <div class="absolute top-0 left-0 w-full h-full bg-fixed bg-center bg-cover" style="background-image: url('https://source.unsplash.com/1600x900/?technology,office'); z-index: -1;"></div>
+      
+          <div class="container mx-auto px-6 text-center">
+              <h2 class="text-5xl font-extrabold text-yellow-400 mb-12 fade-in animate__animated animate__fadeIn">Choose Your Plan</h2>
+      
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <!-- Plan 1 (Highlighted) -->
+                  <div class="bg-gradient-to-r from-gray-800 to-gray-700 p-8 rounded-xl shadow-2xl border-2 border-transparent hover:border-yellow-400 transition-all duration-300 hover:scale-105 transform h-full flex flex-col justify-between">
+                      <div>
+                          <h3 class="text-3xl font-semibold text-white mb-4">Basic Plan</h3>
+                          <div class="text-xl text-yellow-400 mb-4">$19/month</div>
+                          <p class="text-gray-200 mb-4">Ideal for individuals or small teams.</p>
+                          <ul class="text-left text-gray-200 mb-6 space-y-2">
+                              <li class="flex items-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                      <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+                                  </svg>1 User
+                              </li>
+                              <li class="flex items-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                      <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+                                  </svg>10GB Storage
+                              </li>
+                              <li class="flex items-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                      <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+                                  </svg>Email Support
+                              </li>
+                              <li class="flex items-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                      <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+                                  </svg>Access to Basic Features
+                              </li>
+                          </ul>
+                      </div>
+                      <a href="#buy-now" class="inline-block bg-yellow-400 text-gray-900 px-6 py-3 rounded-xl text-lg font-semibold mt-4">Get Started</a>
+                  </div>
+      
+                  <!-- Plan 2 -->
+                  <div class="bg-gradient-to-r from-gray-800 to-gray-700 p-8 rounded-xl shadow-2xl border-2 border-transparent hover:border-yellow-400 transition-all duration-300 hover:scale-105 transform h-full flex flex-col justify-between">
+                      <div>
+                          <h3 class="text-3xl font-semibold text-white mb-4">Pro Plan</h3>
+                          <div class="text-xl text-yellow-400 mb-4">$49/month</div>
+                          <p class="text-gray-200 mb-4">Perfect for growing teams with more features.</p>
+                          <ul class="text-left text-gray-200 mb-6 space-y-2">
+                              <li class="flex items-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                      <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+                                  </svg>Up to 5 Users
+                              </li>
+                              <li class="flex items-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                      <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+                                  </svg>50GB Storage
+                              </li>
+                              <li class="flex items-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                      <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+                                  </svg>Priority Support
+                              </li>
+                              <li class="flex items-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                      <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+                                  </svg>Advanced Features
+                              </li>
+                              <li class="flex items-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                      <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+                                  </svg>Custom Branding
+                              </li>
+                          </ul>
+                      </div>
+                      <a href="#buy-now" class="inline-block bg-yellow-400 text-gray-900 px-6 py-3 rounded-xl text-lg font-semibold mt-4">Get Started</a>
+                  </div>
+      
+                  <!-- Plan 3 -->
+                  <div class="bg-gradient-to-r from-gray-800 to-gray-700 p-8 rounded-xl shadow-2xl border-2 border-transparent hover:border-yellow-400 transition-all duration-300 hover:scale-105 transform h-full flex flex-col justify-between">
+                      <div>
+                          <h3 class="text-3xl font-semibold text-white mb-4">Enterprise Plan</h3>
+                          <div class="text-xl text-yellow-400 mb-4">$99/month</div>
+                          <p class="text-gray-200 mb-4">For large teams or enterprises with all features.</p>
+                          <ul class="text-left text-gray-200 mb-6 space-y-2">
+                              <li class="flex items-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                      <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+                                  </svg>Unlimited Users
+                              </li>
+                              <li class="flex items-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                      <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+                                  </svg>200GB Storage
+                              </li>
+                              <li class="flex items-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                      <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+                                  </svg>24/7 Support
+                              </li>
+                              <li class="flex items-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                      <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+                                  </svg>Full Feature Set
+                              </li>
+                              <li class="flex items-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                      <path d="M10 15l-5.878 3.09L5.236 12.9 1 8.91l6.372-.532L10 2l2.628 5.879 6.372.532-4.236 4.99 1.114 5.19L10 15z"/>
+                                  </svg>Dedicated Account Manager
+                              </li>
+                          </ul>
+                      </div>
+                      <a href="#buy-now" class="inline-block bg-yellow-400 text-gray-900 px-6 py-3 rounded-xl text-lg font-semibold mt-4">Get Started</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      
+    <!-- Call to Action Section -->
+    <section class="bg-blue via-purple-600 to-indigo-500 py-16 gradient-overlay">
+      <div class="container mx-auto text-center px-6">
+        <h2 class="text-4xl font-bold text-white mb-6">Ready to Take the Leap?</h2>
+        <p class="text-xl text-white mb-8">Thousands have already made the change. The future is now—are you ready to be part of it?</p>
+        <button onclick="window.location.href='https://www.example.com/signup'" class="cta-btn bg-yellow-400 text-black py-3 px-12 rounded-lg text-xl shadow-lg transform hover:scale-110 transition duration-300">
+          Join Us Now
+        </button>
+      </div>
+    </section>
+  
+
+    <!-- Footer -->
+    
+
+<footer class="bg-white dark:bg-gray-900">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a href="https://flowbite.com/" class="flex items-center">
+                  <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                      </li>
+                      <li>
+                          <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                      </li>
+                      <li>
+                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Privacy Policy</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+          </span>
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                        <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                    </svg>
+                  <span class="sr-only">Facebook page</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                        <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+                    </svg>
+                  <span class="sr-only">Discord community</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                    <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                </svg>
+                  <span class="sr-only">Twitter page</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                  </svg>
+                  <span class="sr-only">GitHub account</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
+                </svg>
+                  <span class="sr-only">Dribbble account</span>
+              </a>
+          </div>
+      </div>
+    </div>
+</footer>
+
+    
+    <!-- JS for Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@1.4.5/dist/flowbite.min.js"></script>
+ 
+  <script>
+    // Smooth scroll functionality
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Fade-in effect for elements on scroll (can be expanded for more sections)
+    document.addEventListener('DOMContentLoaded', function () {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      fadeElements.forEach((el) => {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('fade-in');
+            }
+          });
+        });
+        observer.observe(el);
+      });
+    });
+
+    particlesJS('particles-js', {
+      particles: {
+        number: {
+          value: 100,
+          density: {
+            enable: true,
+            value_area: 800
+          }
+        },
+        color: {
+          value: '#ffffff'
+        },
+        shape: {
+          type: 'circle',
+          stroke: {
+            width: 0,
+            color: '#000000'
+          }
+        },
+        opacity: {
+          value: 0.5,
+          random: true,
+          anim: {
+            enable: true,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: false
+          }
+        },
+        size: {
+          value: 5,
+          random: true,
+          anim: {
+            enable: false
+          }
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#ffffff',
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: 'none',
+          random: false,
+          straight: false,
+          out_mode: 'out',
+          bounce: false
+        }
+      },
+      interactivity: {
+  detect_on: 'window',
+  events: {
+    onhover: {
+      enable: false,  // This will disable hover interaction
+      mode: 'repulse'
+    },
+    onclick: {
+      enable: true,
+      mode: 'push'
+    }
+  }
+},
+
+      retina_detect: true
+    });
+  
+
+    
+  </script>
+</body>
+</html>
